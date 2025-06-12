@@ -136,6 +136,9 @@ btnAgragar.addEventListener('click', (event) => {
         alert('Tienes que llenar todos los campos')
     } else {
         myQueue.enqueue(inputNombre.value, inputEdad.value, inputSintoma.value)
+        inputNombre.value=''
+        inputEdad.value=''
+        inputSintoma.value=''
     }
 
     myQueue.printQueue()
