@@ -38,7 +38,6 @@ El sistema permite:
 
 ---
 
-
 ## 📂 Estructura del proyecto
 
 ![image](./Imagen.png)

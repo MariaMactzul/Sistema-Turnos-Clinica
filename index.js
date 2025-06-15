@@ -65,9 +65,9 @@ class Queue {
         }
         this.first = this.first.next;
         this.length--;
-        console.log(this.length, 'soy el largo')
+        //console.log(this.length, 'soy el largo')
         if (this.length == 1) {
-            console.log(this.length, 'soy el largo2')
+          //  console.log(this.length, 'soy el largo2')
             InputSiguiente.value = ''
         } else {
             InputSiguiente.value = `Proximo turno: ${this.first.next.Nombre}`
@@ -79,7 +79,7 @@ class Queue {
     }
 
     peek() {
-
+        
         speak(this.first.Nombre)
 
         PacienteActual.textContent = this.first.Nombre
@@ -108,6 +108,7 @@ class Queue {
                 `<tr>
                     <td>${index}</th>
                     <td>${actualNodo.Nombre}</td>
+                    <td>${actualNodo.Edad}</td>
                     <td>${actualNodo.Sintoma}</td>
                     <td>${actualNodo.hora}</td>
                 </tr>`
